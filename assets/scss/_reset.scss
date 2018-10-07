@@ -1,0 +1,42 @@
+// reset
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, figure, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label,legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0px; padding: 0px; border: 0; font-style: normal; text-decoration: none; outline: none; list-style: none; }  body { margin: 0; font-family: sans-serif } * { outline: none } a, a:active, a:visited, a:hover { cursor: pointer; text-decoration: none; }
+
+// polyfill
+header, nav, section, article, main, aside, footer, figure { display: block }
+
+// global box-sizing
+*, *::after, *::before { -moz-box-sizing: border-box; box-sizing: border-box; }
+
+// fontes otimizadas para leitura de artigos
+article { -webkit-font-smoothing: antialiased; font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+// clearfix
+.clear:before, .clear:after { content: " "; display: table } .clear:after { clear: both } .clear { *zoom: 1; } .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden} .clearfix { display: block; height: 1% } .clearfix:before, .clearfix:after { content: " "; display: table; } .clearfix:after { clear: both; } .clearfix { *zoom: 1; }
+
+// width by container
+img { max-width: 100%; height: auto; }
+
+.sr-only { display: none; }
+
+// default wordpress align classes
+.alignnone   { }
+.aligncenter { margin:  0 auto; }
+.alignright  { margin:  0 0 0 20px; float: right; }
+.alignleft   { margin:  0 20px 0 0; float: left; }
+
+// Fonte padrão
+body, form * { font-family: $sans; }
+
+// Sempre ter scroll
+html { overflow-y: scroll }
+
+// Seleção
+::selection { background: #001c4d; }
+
+// Remove o x dos inputs
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
