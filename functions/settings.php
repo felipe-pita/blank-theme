@@ -1,6 +1,12 @@
 <?php
 
 /**
+ * Imagens
+ */
+$center = array('center', 'center');
+add_image_size('custom', 30, 30, $center);
+
+/**
  * Ativa as features do tema
  */
 function set_theme_support() {
@@ -18,24 +24,6 @@ function register_menus() {
 	);
 }
 add_action('after_setup_theme', 'register_menus');
-
-/**
- * Imagens
- */
-$center = array('center', 'center');
-
-add_image_size('profile', 30, 30, $center);
-add_image_size('profile_large', 300, 300, $center);
-
-add_image_size('product_grid', 335, 335, $center);
-add_image_size('product_grid_small', 120, 120, $center);
-add_image_size('product_grid_large', 835, 475, $center);
-
-add_image_size('product_single_large', 1000, 625, $center);
-add_image_size('product_single_thumbnail', 170, 144, $center);
-add_image_size('product_related', 288, 190, $center);
-
-add_image_size('product_email', 380, 240, $center);
 
 /*
  * Remove os links do admin

@@ -18,24 +18,3 @@ function footer_css_js() {
 	}
 }
 add_action('wp_footer', 'footer_css_js');
-
-
-/*
- * Favicons
- */
-function favicons() {
-    ?>
-
-	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri() . '/build/images/favicon/apple-touch-icon.png'; ?>">
-	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri() . '/build/images/favicon/favicon-32x32.png'; ?>">
-	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri() . '/build/images/favicon/favicon-16x16.png'; ?>">
-	<link rel="manifest" href="<?php echo get_stylesheet_directory_uri() . '/build/images/favicon/site.webmanifest'; ?>">
-	<link rel="mask-icon" href="<?php echo get_stylesheet_directory_uri() . '/build/images/favicon/safari-pinned-tab.svg'; ?>" color="#707070">
-	<meta name="msapplication-TileColor" content="#707070">
-	<meta name="theme-color" content="#eaeaea">
-
-    <?php
-}
-add_action('wp_head', 'favicons');
-add_action('admin_head', 'favicons');
-add_action('login_head', 'favicons');
